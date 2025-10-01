@@ -1,0 +1,29 @@
+/* Page-specific refinements to match Figma Regular screen */
+
+.calendar{
+  width:426px;
+  height:auto;
+}
+
+.calendar.light .button-icon img,
+.calendar .button-icon img{
+  width:16px;height:16px;display:block;
+}
+
+.calendar .dropdown .label{color:#f5f5f5}
+.calendar .dropdown .label.small{color:#ffffff}
+.calendar.light .dropdown .label{color:var(--color-141414,#141414)}
+.calendar.light .dropdown .label.small{color:var(--color-1f1f1f,#1f1f1f)}
+
+.dow-row{
+  margin-top:var(--space-16);
+}
+
+.week-row .day{
+  width:54px;
+  height:44px;
+}
+
+@media (max-width: 960px){
+  .container{display:flex;flex-direction:column;align-items:center;gap:24px}
+}

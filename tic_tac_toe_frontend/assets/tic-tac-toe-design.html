@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Regular Calendar - Ocean Professional</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./common.css">
+  <link rel="stylesheet" href="./tic-tac-toe-design.css">
+</head>
+<body>
+  <div class="screen-wrap">
+    <div class="container">
+
+      <!-- Light Mode Card -->
+      <section class="calendar light" aria-label="Light Mode Calendar">
+        <header class="calendar-header">
+          <button class="button-icon" aria-label="Previous month" data-action="prev-month-light">
+            <img src="../figmaimages/figma_image_50_772_7_1816_7_1720_7_979.png" alt="" width="16" height="16" />
+          </button>
+
+          <div class="calendar-center">
+            <div class="dropdown light" role="button" aria-haspopup="listbox" aria-expanded="false" data-dropdown="month-light">
+              <span class="label">April</span>
+              <span class="chev" aria-hidden="true"></span>
+            </div>
+            <div class="dropdown light" role="button" aria-haspopup="listbox" aria-expanded="false" data-dropdown="year-light">
+              <span class="label small">2021</span>
+              <span class="chev" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <button class="button-icon" aria-label="Next month" data-action="next-month-light">
+            <img src="../figmaimages/figma_image_50_772_7_1835_7_1766_7_979.png" alt="" width="16" height="16" />
+          </button>
+        </header>
+
+        <div class="dow-row" aria-hidden="true">
+          <div class="dow-cell">Mo</div>
+          <div class="dow-cell">Tu</div>
+          <div class="dow-cell">We</div>
+          <div class="dow-cell">Th</div>
+          <div class="dow-cell">Fr</div>
+          <div class="dow-cell">Sa</div>
+          <div class="dow-cell">Su</div>
+        </div>
+
+        <div class="calendar-grid">
+          <!-- Week 1 -->
+          <div class="week-row">
+            <div class="day disabled">29</div>
+            <div class="day disabled">30</div>
+            <div class="day disabled">31</div>
+            <div class="day">1</div>
+            <div class="day">2</div>
+            <div class="day">3</div>
+            <div class="day">4</div>
+          </div>
+          <!-- Week 2 -->
+          <div class="week-row">
+            <div class="day">5</div>
+            <div class="day">6</div>
+            <div class="day today">7</div>
+            <div class="day">8</div>
+            <div class="day">9</div>
+            <div class="day">10</div>
+            <div class="day">11</div>
+          </div>
+          <!-- Week 3 -->
+          <div class="week-row">
+            <div class="day">12</div>
+            <div class="day">13</div>
+            <div class="day">14</div>
+            <div class="day">15</div>
+            <div class="day">16</div>
+            <div class="day">17</div>
+            <div class="day">18</div>
+          </div>
+          <!-- Week 4 -->
+          <div class="week-row">
+            <div class="day">19</div>
+            <div class="day">20</div>
+            <div class="day">21</div>
+            <div class="day">22</div>
+            <div class="day">23</div>
+            <div class="day">24</div>
+            <div class="day">25</div>
+          </div>
+          <!-- Week 5 -->
+          <div class="week-row">
+            <div class="day">26</div>
+            <div class="day">27</div>
+            <div class="day">28</div>
+            <div class="day">29</div>
+            <div class="day">30</div>
+            <div class="day disabled">1</div>
+            <div class="day disabled">2</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Spacer -->
+      <div style="height:24px"></div>
+
+      <!-- Dark Mode Card -->
+      <section class="calendar" aria-label="Dark Mode Calendar">
+        <header class="calendar-header">
+          <button class="button-icon" aria-label="Previous month" data-action="prev-month-dark">
+            <img src="../figmaimages/figma_image_50_772_7_1816_7_1720_7_979.png" alt="" width="16" height="16" />
+          </button>
+
+          <div class="calendar-center">
+            <div class="dropdown" role="button" aria-haspopup="listbox" aria-expanded="false" data-dropdown="month-dark">
+              <span class="label" style="color:#f5f5f5">April</span>
+              <span class="chev" aria-hidden="true"></span>
+            </div>
+            <div class="dropdown" role="button" aria-haspopup="listbox" aria-expanded="false" data-dropdown="year-dark">
+              <span class="label small" style="color:#ffffff">2021</span>
+              <span class="chev" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <button class="button-icon" aria-label="Next month" data-action="next-month-dark">
+            <img src="../figmaimages/figma_image_50_772_7_1835_7_1766_7_979.png" alt="" width="16" height="16" />
+          </button>
+        </header>
+
+        <div class="dow-row" aria-hidden="true">
+          <div class="dow-cell">Mo</div>
+          <div class="dow-cell">Tu</div>
+          <div class="dow-cell">We</div>
+          <div class="dow-cell">Th</div>
+          <div class="dow-cell">Fr</div>
+          <div class="dow-cell">Sa</div>
+          <div class="dow-cell">Su</div>
+        </div>
+
+        <div class="calendar-grid">
+          <!-- Week 1 -->
+          <div class="week-row">
+            <div class="day disabled">29</div>
+            <div class="day disabled">30</div>
+            <div class="day disabled">31</div>
+            <div class="day">1</div>
+            <div class="day">2</div>
+            <div class="day">3</div>
+            <div class="day">4</div>
+          </div>
+          <!-- Week 2 -->
+          <div class="week-row">
+            <div class="day">5</div>
+            <div class="day">6</div>
+            <div class="day today">7</div>
+            <div class="day">8</div>
+            <div class="day">9</div>
+            <div class="day">10</div>
+            <div class="day">11</div>
+          </div>
+          <!-- Week 3 -->
+          <div class="week-row">
+            <div class="day">12</div>
+            <div class="day">13</div>
+            <div class="day">14</div>
+            <div class="day">15</div>
+            <div class="day">16</div>
+            <div class="day">17</div>
+            <div class="day">18</div>
+          </div>
+          <!-- Week 4 -->
+          <div class="week-row">
+            <div class="day">19</div>
+            <div class="day">20</div>
+            <div class="day">21</div>
+            <div class="day">22</div>
+            <div class="day">23</div>
+            <div class="day">24</div>
+            <div class="day">25</div>
+          </div>
+          <!-- Week 5 -->
+          <div class="week-row">
+            <div class="day">26</div>
+            <div class="day">27</div>
+            <div class="day">28</div>
+            <div class="day">29</div>
+            <div class="day">30</div>
+            <div class="day disabled">1</div>
+            <div class="day disabled">2</div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
